@@ -1,4 +1,5 @@
 #!/bin/sh
+# only pushes to gh-pages
 
 if [[ $(git status -s) ]]
 then
@@ -22,4 +23,7 @@ echo "Generating site"
 hugo -t ananke
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+cd public
+git add --all
+git commit -m "Publishing to gh-pages (publish.sh)"
+git push
