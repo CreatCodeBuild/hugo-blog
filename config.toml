@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://creatcodebuild.github.io/hugo-blog/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "哲的王"
 theme = "ananke"
