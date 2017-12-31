@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>哲の王</title>
-    <link>https://creatcodebuild.github.io/hugo-blog/</link>
-    <description>Recent content on 哲の王</description>
+    <title>年度总结 on 哲の王</title>
+    <link>https://creatcodebuild.github.io/hugo-blog/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+    <description>Recent content in 年度总结 on 哲の王</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Dec 2017 23:33:49 -0800</lastBuildDate>
     
-	<atom:link href="https://creatcodebuild.github.io/hugo-blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://creatcodebuild.github.io/hugo-blog/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>https://creatcodebuild.github.io/hugo-blog/post/2017%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;现在是西部时间12月26号23:34，我坐在从西雅图前往费城的隔夜航班上。好像技术社区流行写年终总结，我也来跟风总结下我的2017。只谈技术和工作，和不相关的事。
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo大法好</title>
-      <link>https://creatcodebuild.github.io/hugo-blog/post/hugo%E5%A4%A7%E6%B3%95%E5%A5%BD/</link>
-      <pubDate>Tue, 26 Dec 2017 20:29:54 -0800</pubDate>
-      
-      <guid>https://creatcodebuild.github.io/hugo-blog/post/hugo%E5%A4%A7%E6%B3%95%E5%A5%BD/</guid>
-      <description>Go Hugo！Bye Hexo！</description>
     </item>
     
   </channel>

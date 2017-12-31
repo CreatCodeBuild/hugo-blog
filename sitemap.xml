@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://creatcodebuild.github.io/hugo-blog/posts/2017%E6%80%BB%E7%BB%93/</loc>
+    <loc>https://creatcodebuild.github.io/hugo-blog/post/2017%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2017-12-26T23:33:49-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://creatcodebuild.github.io/hugo-blog/posts/hugo%E5%A4%A7%E6%B3%95%E5%A5%BD/</loc>
+    <loc>https://creatcodebuild.github.io/hugo-blog/post/hugo%E5%A4%A7%E6%B3%95%E5%A5%BD/</loc>
     <lastmod>2017-12-26T20:29:54-08:00</lastmod>
   </url>
   
@@ -18,7 +18,7 @@
   </url>
   
   <url>
-    <loc>https://creatcodebuild.github.io/hugo-blog/posts/</loc>
+    <loc>https://creatcodebuild.github.io/hugo-blog/post/</loc>
     <lastmod>2017-12-26T23:33:49-08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -30,6 +30,12 @@
   
   <url>
     <loc>https://creatcodebuild.github.io/hugo-blog/</loc>
+    <lastmod>2017-12-26T23:33:49-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://creatcodebuild.github.io/hugo-blog/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2017-12-26T23:33:49-08:00</lastmod>
     <priority>0</priority>
   </url>
