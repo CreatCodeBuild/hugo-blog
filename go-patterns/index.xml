@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go Patterns on 哲の王</title>
+    <link>https://creatcodebuild.github.io/hugo-blog/go-patterns/</link>
+    <description>Recent content in Go Patterns on 哲の王</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jan 2018 20:09:28 -0800</lastBuildDate>
+    
+	<atom:link href="https://creatcodebuild.github.io/hugo-blog/go-patterns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Context Manager 上下文管理器 </title>
+      <link>https://creatcodebuild.github.io/hugo-blog/go-patterns/context-manager/</link>
+      <pubDate>Thu, 04 Jan 2018 20:12:34 -0800</pubDate>
+      
+      <guid>https://creatcodebuild.github.io/hugo-blog/go-patterns/context-manager/</guid>
+      <description>&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+
+&lt;p&gt;Context Manager（上下文管理器）是在不改变编程契约的情况下隐藏控制流的方法。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

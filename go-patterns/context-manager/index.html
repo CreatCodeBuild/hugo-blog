@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>哲の王  | Tags</title>
+    <title>哲の王  | Context Manager 上下文管理器 </title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -21,33 +21,50 @@
     
 
     
-      <link href="https://creatcodebuild.github.io/hugo-blog/tags/index.xml" rel="alternate" type="application/rss+xml" title="哲の王" />
-      <link href="https://creatcodebuild.github.io/hugo-blog/tags/index.xml" rel="feed" type="application/rss+xml" title="哲の王" />
-    
 
-    <meta property="og:title" content="Tags" />
-<meta property="og:description" content="The last theme you&#39;ll ever need. Maybe." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://creatcodebuild.github.io/hugo-blog/tags/" />
+    <meta property="og:title" content="Context Manager 上下文管理器 " />
+<meta property="og:description" content="定义
 
-
+Context Manager（上下文管理器）是在不改变编程契约的情况下隐藏控制流的方法。
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://creatcodebuild.github.io/hugo-blog/go-patterns/context-manager/" />
 
 
 
+<meta property="article:published_time" content="2018-01-04T20:12:34-08:00"/>
 
-
-
+<meta property="article:modified_time" content="2018-01-04T20:12:34-08:00"/>
 
 
 
 
 
 
-<meta itemprop="name" content="Tags">
-<meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe.">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
+
+
+
+
+<meta itemprop="name" content="Context Manager 上下文管理器 ">
+<meta itemprop="description" content="定义
+
+Context Manager（上下文管理器）是在不改变编程契约的情况下隐藏控制流的方法。
+">
+
+
+<meta itemprop="datePublished" content="2018-01-04T20:12:34-08:00" />
+<meta itemprop="dateModified" content="2018-01-04T20:12:34-08:00" />
+<meta itemprop="wordCount" content="191">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Context Manager 上下文管理器 "/>
+<meta name="twitter:description" content="定义
+
+Context Manager（上下文管理器）是在不改变编程契约的情况下隐藏控制流的方法。
+"/>
 
   </head>
 
@@ -55,10 +72,8 @@
 
     
 
-  
-  
-  <header class="cover bg-top" style="background-image: url('https://creatcodebuild.github.io/hugo-blog/images/gohugo-default-sample-hero-image.jpg');">
-    <div class="bg-black-60">
+  <header>
+    <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://creatcodebuild.github.io/hugo-blog/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -123,73 +138,153 @@
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Tags
-        </h1>
-        
-      </div>
     </div>
   </header>
 
 
     <main class="pb7" role="main">
       
-    
-  <article class="cf pa3 pa4-m pa4-l">
-    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
-      
-    </div>
-  </article>
-  <div class="mw8 center">
-    <section class="ph4">
-      
-        <h2 class="f1">
-          <a href="/hugo-blog/tags/%E5%B0%8F%E7%9B%AE%E6%A0%87" class="link blue hover-black">
-            Tag: 小目标
-          </a>
-        </h2>
-        
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="/hugo-blog/post/2018%E5%B0%8F%E7%9B%AE%E6%A0%87/" class="link black dim">
-        2018小目标
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
-    </div>
-  </div>
-</div>
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
+          GO PATTERNS
+        </p>
+        <h1 class="f1">
+          Context Manager 上下文管理器 
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        <h2 id="定义">定义</h2>
 
-        
-      
-        <h2 class="f1">
-          <a href="/hugo-blog/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93" class="link blue hover-black">
-            Tag: 年度总结
-          </a>
-        </h2>
-        
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="/hugo-blog/post/2017%E6%80%BB%E7%BB%93/" class="link black dim">
-        不靠谱的2017总结：从被抢劫到闯硅谷
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>现在是西部时间12月26号23:34，我坐在从西雅图前往费城的隔夜航班上。好像技术社区流行写年终总结，我也来跟风总结下我的2017。只谈技术和工作，和不相关的事。
+<p>Context Manager（上下文管理器）是在不改变编程契约的情况下隐藏控制流的方法。
 </p>
-    </div>
-  </div>
-</div>
 
-        
+<pre><code class="language-go">package main
+
+import &quot;fmt&quot;
+
+// Context Manager
+func withIgnoring7(add func(int, int) int, a int, b int) int {
+    r := add(a, b)
+    if r == 7 {
+        return 0
+    }
+    return r
+}
+
+func add(a int, b int) int {
+    return a + b
+}
+
+func main() {
+    fmt.Println(withIgnoring7(add, 1, 6))
+}
+</code></pre>
+
+<p>示例中 <code>withIgnoring7</code> 是一个上下文管理器，其作用是忽略等于 7 的值。</p>
+
+<p>上下文管理器有两个要点：<br />
+1. 第一点是不改变被管理函数的接口。<code>withIgnoring7(add, 1, 6)</code> 和 <code>add(1, 6)</code> 有同样的接口。<br />
+2. 第二点是隐藏控制流。<code>withIgnoring7</code> 的用户不知到里面的有那些操作。</p>
+
+<h2 id="常用处">常用处</h2>
+
+<h3 id="retry-再尝试">Retry 再尝试</h3>
+
+<p>当网络请求出错时，需要重试</p>
+
+<pre><code class="language-go">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;errors&quot;
+	&quot;time&quot;
+)
+
+func WithRetryAfter(seconds int, times int, call func() error) error {
+	for i := 0; i &lt; times; i++ {
+		err := call()
+		if err.Error() == &quot;timeout&quot; {
+			fmt.Println(err)
+			time.Sleep(time.Second * time.Duration(seconds))
+			fmt.Println(i+1, &quot;s&quot;)
+			continue
+		}
+		if err != nil {
+		        fmt.Println(&quot;x&quot;)
+			return err
+		}
+		return nil
+	}
+	return errors.New(&quot;max timeout&quot;)
+}
+
+func request() error {
+	return errors.New(&quot;timeout&quot;)
+}
+
+func main() {
+	err := WithRetryAfter(1, 3, request)
+	if err != nil {
+		fmt.Println(&quot;x&quot;, err)
+	}
+}
+</code></pre>
+
+<p>复制代码到 <a href="https://play.golang.org/">https://play.golang.org/</a></p>
+
+<p>这里是一个假的网络链接超时的例子。这里 <code>WithRetryAfter(1, 3, request)</code> 代表重试 3 次，每次等一秒。</p>
+
+<h3 id="synchronization-同步">Synchronization 同步</h3>
+
+<p>如果我们有一个 semaphore，我们需要管理它的计数。虽然在 Go 里很少直接用到 mutex 和 semaphore，但有时还是很好用的。</p>
+
+<p>首先 Go 语言没有自带 semaphore，需要先实现一个。</p>
+
+<pre><code class="language-go">
+</code></pre>
+
+<h2 id="建议">建议</h2>
+
+<ol>
+<li><p>借鉴 Python，用 <code>withXXX</code> 或者 <code>WithXXX</code> 来命名，让用户知道这是一个上下文管理器。</p></li>
+
+<li><p>一定要保证同样的接口，哪怕是 <code>error</code> 接口。</p></li>
+</ol>
+      </div>
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "creatcodebuild" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+    <aside class="ph3 mt2 mt6-ns">
       
-    </section>
+
+
+
+
+
+
+
+
+    </aside>
   </div>
 
     </main>

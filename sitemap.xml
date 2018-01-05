@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://creatcodebuild.github.io/hugo-blog/go-patterns/context-manager/</loc>
+    <lastmod>2018-01-04T20:12:34-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://creatcodebuild.github.io/hugo-blog/go-patterns/</loc>
+    <lastmod>2018-01-04T20:09:28-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://creatcodebuild.github.io/hugo-blog/tutorial/</loc>
     <lastmod>2017-12-31T22:02:08-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -64,7 +78,7 @@
   
   <url>
     <loc>https://creatcodebuild.github.io/hugo-blog/</loc>
-    <lastmod>2017-12-31T20:31:30-05:00</lastmod>
+    <lastmod>2018-01-04T20:12:34-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
