@@ -55,7 +55,7 @@ Context Manager（上下文管理器）是在不改变编程契约的情况下�
 
 <meta itemprop="datePublished" content="2018-01-04T20:12:34-08:00" />
 <meta itemprop="dateModified" content="2018-01-04T20:12:34-08:00" />
-<meta itemprop="wordCount" content="191">
+<meta itemprop="wordCount" content="330">
 
 
 
@@ -238,19 +238,90 @@ func main() {
 
 <h3 id="synchronization-同步">Synchronization 同步</h3>
 
-<p>如果我们有一个 semaphore，我们需要管理它的计数。虽然在 Go 里很少直接用到 mutex 和 semaphore，但有时还是很好用的。</p>
+<p>虽然在 Go 里很少直接用到 mutex，但有时还是很好用的。</p>
 
-<p>首先 Go 语言没有自带 semaphore，需要先实现一个。</p>
+<p>通常可以这样写</p>
 
-<pre><code class="language-go">
+<pre><code class="language-go">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;sync&quot;
+)
+
+func main() {
+	var mutex = &amp;sync.Mutex{}
+	mutex.Lock()
+	fmt.Println(&quot;Lock&quot;)
+	fmt.Println(&quot;Do something&quot;)
+	a := 1
+	b := 2
+	c := a + b
+	fmt.Println(&quot;Unlock&quot;)
+	mutex.Unlock()
+	fmt.Println(&quot;c =&quot;, c)
+}
 </code></pre>
 
-<h2 id="建议">建议</h2>
+<p>我们可以用一个 <code>WithSynchronizedAccess</code> 来包裹。</p>
+
+<pre><code class="language-go">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;sync&quot;
+)
+
+func WithSynchronizedAccess(mutex *sync.Mutex, f func() int) int {
+	mutex.Lock()
+	fmt.Println(&quot;Lock&quot;)
+	defer func() {
+		fmt.Println(&quot;Unlock&quot;)
+		mutex.Unlock()
+	}()
+	return f()
+}
+
+func main() {
+	var mutex = &amp;sync.Mutex{}
+	f := func() int{
+		fmt.Println(&quot;Do something.&quot;)
+		a := 1
+		b := 2
+		c := a + b
+		return c
+	}
+	c := WithSynchronizedAccess(mutex, f)
+	fmt.Println(&quot;c =&quot;, c)
+}
+</code></pre>
+
+<p>复制代码到 <a href="https://play.golang.org/">https://play.golang.org/</a></p>
+
+<p>这里我们用一个 local 函数将之前散装的代码打包了。如果你喜欢 inline 风格也可以。</p>
+
+<pre><code class="language-go">func main() {
+	var mutex = &amp;sync.Mutex{} 
+	c := WithSynchronizedAccess(mutex, func() int {
+		fmt.Println(&quot;Do something.&quot;)
+		a := 1
+		b := 2
+		c := a + b
+		return c
+	})
+	fmt.Println(&quot;c =&quot;, c)
+}
+</code></pre>
+
+<h2 id="建议-从重要到次要">建议（从重要到次要）</h2>
 
 <ol>
-<li><p>借鉴 Python，用 <code>withXXX</code> 或者 <code>WithXXX</code> 来命名，让用户知道这是一个上下文管理器。</p></li>
-
 <li><p>一定要保证同样的接口，哪怕是 <code>error</code> 接口。</p></li>
+
+<li><p>函数签名用 <code>withXXX(paramsOfCM..., fun, paramsOfFun...)</code><br />
+| 被管理函数前面的参数为内容管理器自身的参数，之后的参数为被管理函数的参数。</p></li>
+
+<li><p>借鉴 Python，用 <code>withXXX</code> 或者 <code>WithXXX</code> 来命名，让用户知道这是一个上下文管理器。</p></li>
 </ol>
       </div>
       <div id="disqus_thread"></div>
