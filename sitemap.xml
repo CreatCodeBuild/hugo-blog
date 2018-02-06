@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://creatcodebuild.github.io/hugo-blog/%E6%A1%8C%E6%B8%B8%E6%B5%8B%E8%AF%95/test_run_2/</loc>
+    <lastmod>2018-02-06T00:08:07-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://creatcodebuild.github.io/hugo-blog/%E6%A1%8C%E6%B8%B8%E6%B5%8B%E8%AF%95/test_run_1/</loc>
     <lastmod>2018-02-02T21:00:51-08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -92,7 +99,7 @@
   
   <url>
     <loc>https://creatcodebuild.github.io/hugo-blog/</loc>
-    <lastmod>2018-02-02T21:00:51-08:00</lastmod>
+    <lastmod>2018-02-06T00:08:07-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
