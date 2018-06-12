@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://creatcodebuild.github.io/hugo-blog/tutorial/go-intro/</loc>
+    <lastmod>2018-06-11T21:18:54-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://creatcodebuild.github.io/hugo-blog/post/the-creation-of-graphb/</loc>
+    <lastmod>2018-06-07T20:06:46-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://creatcodebuild.github.io/hugo-blog/%E6%A1%8C%E6%B8%B8%E6%B5%8B%E8%AF%95/test_run_3/</loc>
     <lastmod>2018-02-08T02:50:20-08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -93,7 +107,7 @@
   
   <url>
     <loc>https://creatcodebuild.github.io/hugo-blog/post/</loc>
-    <lastmod>2017-12-31T20:31:30-05:00</lastmod>
+    <lastmod>2018-06-07T20:06:46-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -106,7 +120,7 @@
   
   <url>
     <loc>https://creatcodebuild.github.io/hugo-blog/</loc>
-    <lastmod>2018-02-08T02:50:20-08:00</lastmod>
+    <lastmod>2018-06-11T21:18:54-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
